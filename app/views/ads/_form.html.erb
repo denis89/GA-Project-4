@@ -1,19 +1,6 @@
-<h1>New Ads</h1>
+<%= form_for @ads do |f| %>
  
-<%= render 'form' %>
- 
- <%= link_to 'Back', new_ad_path %>
-
- 
-
-
-<!--
-<%= form_for :ads, url: ads_path do |f| %> -->
-
-<!--
-Error message added
--->
-<!--  <% if @ads.errors.any? %>
+  <% if @ads.errors.any? %>
     <div id="error_explanation">
       <h2>
         <%= pluralize(@ads.errors.count, "error") %> prohibited
@@ -26,17 +13,19 @@ Error message added
       </ul>
     </div>
   <% end %>
-
+ 
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </p>
+ 
   <p>
     <%= f.label :text %><br>
     <%= f.text_area :text %>
   </p>
+ 
   <p>
     <%= f.submit %>
   </p>
+ 
 <% end %>
--->

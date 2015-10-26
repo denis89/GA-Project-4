@@ -1,9 +1,13 @@
 <p>
   <strong>Title: First ad!</strong>
-  <%= @ads.title %>
+  <%= @ad.title %>
 </p>
  
 <p>
   <strong>Text: Place your ad here!</strong>
-  <%= @ads.text %>
+  <%= @ad.text %>
 </p>
+
+<%= link_to 'Edit', edit_ad_path(@ad) %> |
+<%= link_to 'Back', ads_path %>
+<!-- Go back to the index page -->

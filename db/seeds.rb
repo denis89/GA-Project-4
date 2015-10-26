@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+  
+
+   ads = Ads.create([{
+    title: 'MacBook Pro 13.3", Model 2014'}, {text: 'Price: 750 pounds'}
+    ])

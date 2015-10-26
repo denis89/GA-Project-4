@@ -1,19 +1,15 @@
-<h1>New Ads</h1>
+<h1>Edit Ads</h1>
  
 <%= render 'form' %>
  
- <%= link_to 'Back', new_ad_path %>
+<%= link_to 'Back', ads_path %>
 
+<!--
+<h1>Editing ads</h1>
  
-
-
-<!--
-<%= form_for :ads, url: ads_path do |f| %> -->
-
-<!--
-Error message added
--->
-<!--  <% if @ads.errors.any? %>
+<%= form_for :ads, url: ads_path(@ads), method: :patch do |f| %>
+ 
+  <% if @ads.errors.any? %>
     <div id="error_explanation">
       <h2>
         <%= pluralize(@ads.errors.count, "error") %> prohibited
@@ -26,17 +22,23 @@ Error message added
       </ul>
     </div>
   <% end %>
-
+ 
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </p>
+ 
   <p>
     <%= f.label :text %><br>
     <%= f.text_area :text %>
   </p>
+ 
   <p>
     <%= f.submit %>
   </p>
+ 
 <% end %>
+ 
+<%= link_to 'Back', adss_path %>
+
 -->
