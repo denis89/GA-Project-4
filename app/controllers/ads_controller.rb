@@ -29,9 +29,9 @@ class AdsController < ApplicationController
 
 
   def update
-  @ad = Article.find(params[:id])
+  @ad = Ad.find(params[:id])
  
-  if @ad.update(article_params)
+  if @ad.update(ad_params)
     redirect_to @ad
   else
     render 'edit'
@@ -41,13 +41,12 @@ class AdsController < ApplicationController
    def destroy
     @ads = Ad.find(params[:id])
     @ads.destroy
- 
-    redirect_to adss_path
+    redirect_to ads_path
   end
 
   private
   def ads_params
-    params.require(:ad).permit(:title, :text)
+    params.require(:ad).permit(:title, :text, :category)
   end
   
 

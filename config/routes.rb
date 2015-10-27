@@ -2,11 +2,17 @@ Rails.application.routes.draw do
   get 'welcome/index'
   root 'ads#index'
   resources :ads
-  resources :sales
-  #Each folder has got a resources and a controller
+  get 'sales/index'
+  get 'sales/computer', to: 'sales#computer'
+  get 'sales/clothes'
+  get 'sales/furniture'
+  get 'sales/vehicle'
+  resources :services
+  #Each folder has got a resource and a controller
 
 
 
+get 'sales/furniture'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
