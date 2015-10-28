@@ -1,8 +1,10 @@
 <% @vehicles.each do |vehicle| %>
-    <tr>
-      <td><%= vehicle.title %></td>
-       <td><%= vehicle.category %></td>
-      <td><%= vehicle.text %></td>
-      </tr>
-    <%  end %>
+
+
+  
+<% if vehicle.subcategory === 'Vehicles' %>
+  <td><%= vehicle.title %></td>
+<%  end %>
+
+<%  end %>
     
