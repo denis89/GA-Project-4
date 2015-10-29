@@ -1,8 +1,13 @@
 <% @clotheses.each do |clothes| %>
-    <tr>
-      <td><%= clothes.title %></td>
-       <td><%= clothes.subcategory %></td>
-      <td><%= clothes.text %></td>
-      </tr>
-    <%  end %>
-      
+  
+<% if clothes.subcategory === 'Clothes' %>
+  <td><%= clothes.title %></td>
+   <td><%= clothes.text %></td>
+  <p>
+      <b>Image:</b>
+      <%= image_tag (clothes.recipe_image.url) %>
+  </p>
+<%  end %>
+
+<%  end %>
+    

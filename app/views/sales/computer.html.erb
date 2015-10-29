@@ -1,9 +1,12 @@
 <% @computers.each do |computer| %>
-
-
   
 <% if computer.subcategory === 'Computers' %>
   <td><%= computer.title %></td>
+   <td><%= computer.text %></td>
+  <p>
+      <b>Image:</b>
+      <%= image_tag (computer.recipe_image.url) %>
+  </p>
 <%  end %>
 
 <%  end %>

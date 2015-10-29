@@ -4,6 +4,7 @@ class SalesController < ApplicationController
     
     def computer
     @computers = Ad.all
+    @recipe_image = Ad.all
     render :computer
    end
 
@@ -21,4 +22,8 @@ class SalesController < ApplicationController
     @vehicles = Ad.all
     render :vehicle
    end
+
+   def recipe_image
+   end
+
 end

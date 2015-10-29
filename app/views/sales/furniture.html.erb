@@ -1,8 +1,15 @@
 <% @furnitures.each do |furniture| %>
-    <tr>
-      <td><%= furniture.title %></td>
-       <td><%= furniture.subcategory %></td>
-      <td><%= furniture.text %></td>
-      </tr>
-    <% end %>
+
+
+  
+<% if furniture.subcategory === 'Furnitures' %>
+  <td><%= furniture.title %></td>
+   <td><%= computer.text %></td>
+   <p>
+      <b>Image:</b>
+      <%= image_tag furniture.recipe_image.url %>
+  </p>
+<%  end %>
+
+<%  end %>
     

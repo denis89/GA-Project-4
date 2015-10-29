@@ -4,6 +4,11 @@
   
 <% if vehicle.subcategory === 'Vehicles' %>
   <td><%= vehicle.title %></td>
+  <td><%= vehicle.text %></td>
+  <p>
+      <b>Image:</b>
+      <%= image_tag vehicle.recipe_image.url %>
+  </p>
 <%  end %>
 
 <%  end %>

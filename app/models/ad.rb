@@ -1,4 +1,5 @@
 class Ad < ActiveRecord::Base
-   validates :title, :category, presence: true,
-                    length: { minimum: 5 }
+  mount_uploader :recipe_image, RecipeImageUploader
+  validates :title, :category, presence: true,
+                    length: { minimum: 0 }
 end
