@@ -4,7 +4,10 @@
   
 <% if vehicle.subcategory === 'Vehicles' %>
   <td><%= vehicle.title %></td>
+   <td><%= vehicle.price %></td>
   <td><%= vehicle.text %></td>
+  <td><%= vehicle.phone_no %></td>
+  <td><%= vehicle.email %></td>
   <p>
       <b>Image:</b>
       <%= image_tag vehicle.recipe_image.url %>

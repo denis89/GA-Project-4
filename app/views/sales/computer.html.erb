@@ -2,7 +2,10 @@
   
 <% if computer.subcategory === 'Computers' %>
   <td><%= computer.title %></td>
+  <td><%= computer.price %></td>
    <td><%= computer.text %></td>
+   <td><%= computer.phone_no %></td>
+   <td><%= computer.email %></td>
   <p>
       <b>Image:</b>
       <%= image_tag (computer.recipe_image.url) %>

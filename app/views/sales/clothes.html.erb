@@ -2,7 +2,10 @@
   
 <% if clothes.subcategory === 'Clothes' %>
   <td><%= clothes.title %></td>
-   <td><%= clothes.text %></td>
+  <td><%= clothes.price %></td>
+  <td><%= clothes.text %></td>
+  <td><%= clothes.phone_no %></td>
+  <td><%= clothes.email %></td>
   <p>
       <b>Image:</b>
       <%= image_tag (clothes.recipe_image.url) %>

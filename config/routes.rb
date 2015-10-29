@@ -10,9 +10,6 @@ Rails.application.routes.draw do
   resources :services
   #Each folder has got a resource and a controller
 
-
-
-get 'sales/furniture'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -27,14 +27,27 @@
   <p>
    <%= f.select :subcategory, [['-- Select --'],['Clothes'],['Computers'],['Furnitures'],['Vehicles']]%>
   </p>
+  
+  <p>
+  <%= f.label :phoneno %><br>
+  <%= f.telephone_field :phone_no %>
+  </p>
+  
+   <p>
+  <%= f.label :email %><br>
+  <%= f.text_field :text %>
+  </p>
+
   <p>
     <%= f.label :text %><br>
     <%= f.text_area :text %>
   </p>
+   
    <div class="field">
       <%= f.label :recipe_image %><br />
       <%= f.file_field :recipe_image %>
   </div>
+  
   <p>
     <%= f.submit %>
   </p>
